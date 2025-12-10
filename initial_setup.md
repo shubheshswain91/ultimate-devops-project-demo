@@ -434,3 +434,53 @@ Compare the IPs in below two pictures
 ![alt text](image-108.png)
 
 ![alt text](image-109.png)
+
+![alt text](image-110.png)
+
+![alt text](image-111.png)
+
+![alt text](image-112.png)
+
+## GitOps using ArgoCD
+
+![alt text](image-113.png)
+
+![alt text](image-114.png)
+
+### Installing ArgoCD
+
+https://argo-cd.readthedocs.io/en/stable/getting_started/
+
+
+![alt text](image-115.png)
+
+![alt text](image-116.png)
+
+Chnage the Type to Load Balancer 
+
+ubuntu@ip-172-31-16-170:~$ k edit svc argocd-server -n argocd
+
+![alt text](image-117.png)
+
+![alt text](image-118.png)
+
+![alt text](image-119.png)
+
+ubuntu@ip-172-31-16-170:~$ k edit secret argocd-initial-admin-secret -n argocd
+
+Decode the password using base64 
+ echo <randomstring from the admin secret file > | base64 --decode
+
+![alt text](image-120.png)
+
+![alt text](image-121.png)
+
+![alt text](image-122.png)
+
+![alt text](image-123.png)
+
+![alt text](image-124.png)
+
+![alt text](image-125.png)
+
+![alt text](image-126.png)
